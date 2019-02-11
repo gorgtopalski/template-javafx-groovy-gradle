@@ -1,0 +1,23 @@
+plugins {
+    id 'groovy'
+    id 'application'
+
+    // OpenJFX plugin
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.5.4'
+    testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
+}
+
+// Define the main class for the application
+mainClassName = 'JavaFxApplication'
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}

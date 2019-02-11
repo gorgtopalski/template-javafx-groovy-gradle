@@ -1,0 +1,5 @@
+.label {
+    -fx-text-alignment: center;
+    -fx-font-family: "Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif;
+    -fx-font-weight: bold;
+}
